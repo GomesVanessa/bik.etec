@@ -1,0 +1,299 @@
+.subtitulo{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #000; 
+    margin: 20px;
+    text-transform: uppercase;  
+}
+
+.subtitulo::after{
+    content: "";
+    display:block;
+    width: 100px; 
+    height:4px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.call{
+    text-align: center;
+    padding-top: 30px;
+    clear:both;
+}
+
+.call p{ 
+    margin-bottom:35px;
+}
+
+/*PERSONALIZAÇÃO DO TOPO*/
+header{ 
+    width: 100%;
+    background-color: #fec63e;
+    padding: 15px 0 ;/*espaçamento pra cima e pra baixo; segundo aplica na esquerda e direita*/
+    border-bottom: 2px solid black; /*faz uma linha na borda inferior do menu, solida, da cor preta*/
+   /* position: fixed;*/
+    z-index: 1;
+}
+
+nav{
+    text-align: center; /*menu a direita*/
+    padding-top: 30px; /*deixa esse espaço no topo do menu*/
+} 
+
+nav li{ 
+    display: inline; /*para os elementos do menu fiquem um do lado do outro*/
+}
+
+nav li a{
+    color:#000;/*cor da fonte*/
+    font-weight: bold; /*negrito*/
+    text-transform: uppercase; /* deixa a letra maiuscula*/ 
+    font-size:16px; /*tamanho da fonte*/
+    padding: 15px; /*deixa o elemento clicável não só sobre o nome mas no espaço como se fosse um link*/
+    text-decoration: none; /*tira o underline do menu!!!!!*/
+}
+
+nav li a:hover{ 
+    color: #FFF; /*qdo colocar o cursor do mouse em cima da palavra ela ficará branca */
+}
+
+
+/*PERSONALIZAÇÃO DA INTRODUÇÃO*/ 
+.intro{
+    width: 100%;
+    background-image: url("../img/bg.jpg");
+    height: 400px; /*altura da imagem!!!!*/
+    background-repeat: no-repeat;
+    background-size: cover; /*imagem ajusta se tanto na horizontal qto na vertical*/ 
+    text-align: center;
+    background-position: top;
+}
+
+.intro h1{
+    font-size: 48px;
+    color:#FFF; 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px black; /*para aplicar SOMBRA na letra (direita, baixo, borrar, cor)*/
+    padding-top: 80px; /*para ter um espaço no topo do texto*/
+}
+
+blockquote{ 
+    width: 40%;
+    margin: 0 auto; /*também centraliza!*/
+    margin-bottom: 40px;
+    color: #FFF;
+    font-size: 17pt;
+}
+
+blockquote p, blockquote cite{
+    font-weight: bold;
+}
+
+blockquote p:before, blockquote p::after{
+    content: "";
+    display: block; 
+    width: 100px; /*tamanho e altura da linha em cima e embaixo da citação*/
+    height:4px;
+    background-color: #FFF;
+    margin: 15px auto; 
+} 
+
+.btn{
+    border:3px solid #fec63e;
+    color: #fec63e; 
+    padding:10px 30px; /*10 pra cima e 30 pra baixo*/
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;  
+}
+
+.btn:hover{/*muda de cor qdo o mouse é colocado sobre a caixa*/
+    border:3px solid #000;
+    color: #000;
+    padding: 15px 35px;
+    font-size: 16pt;
+    transition: 1s; /*tem que colocar essa propriedade no hover.. tempo pra ele sair do estado sem modificações para o estado com modificação*/
+}
+
+
+/*ESTILIZAÇÃO DA SESSÃO PRODUTOS*/
+
+.produtos{
+    padding: 50px; 
+}
+
+.item-produto{
+    background-color: #000;
+    padding:10px;
+}
+
+.lista-produtos li{ 
+    background-color: #fec63e;
+    text-align: center; 
+}
+
+.lista-produtos li h3{
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase; /*letra maiuscula*/
+    margin: 15px;
+}
+
+.lista-produtos li h3::after{ /*"underline"*/
+    content: ""; /*conteúdo que o after vai possuir*/
+    display: block; /*ser jogado para linha de baixo do elemento*/
+    width: 100px; 
+    height: 4px; 
+    background-color: #000;
+    margin: 0 auto; /*centraliza */
+}
+
+.lista-produtos li p{
+    padding: 0 20px 20px 20px;
+}
+
+
+/*Portifólio*/ 
+
+.portifolio {
+    background-color: #000;
+    padding: 10px 0 50px 0;
+}
+
+.portifolio h2{ 
+    color:#fec63e; 
+}
+
+.portifolio h2::after{ 
+   background-color:#fec63e; 
+}
+
+.portifolio .ultima{
+    margin-top:15px;
+}
+
+.portifolio p{
+    color:#FFF;
+}
+
+.portifolio .btn:hover{
+    color:#FFF;
+    border: 3px solid #FFF;
+
+}
+
+.portifolio img{
+    width: 100%;
+}
+
+/*ESTILIZAÇÃO DA SESSÃO QUALIDADE*/
+
+.qualidade{
+    padding: 50px 0; /*aplica pro topo e boton*/
+}
+
+.img-qualidade{ /*centralizar a imagem*/
+    margin: 0 auto;
+    display: block;
+}
+
+.lista-qualidade li{ 
+    text-align: center;
+    padding-top: 30px;/* espaçamento pro topo*/
+}
+
+.lista-qualidade li h3{ 
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:15px;
+}
+
+.lista-qualidade li h3::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px; 
+    background-color: black;
+    margin: 0 auto; 
+}
+
+.container-qualidade{
+    width: 1000px; 
+    margin: 0 auto; 
+}
+
+.qualidade::after{
+    content:""; 
+    background-image: url(../img/linhas.png);
+    display: block;
+    width: 634px; 
+    height: 83px;
+    position: absolute;
+    top:191px; 
+    left: 184px; 
+}
+
+
+    
+
+/*ESTILIZAÇÃO DA SESSÃO FOOTER*/
+
+
+.footer{ 
+    width: 80%;
+    height: 200px; 
+    background-image: url(../img/bg-footer.jpg);
+    background-repeat: no-repeat;
+    background-size:contain; 
+    text-align: center;   
+}
+
+
+/*ESTILIZAÇÃO DA SESSÃO RODAPÉ*/
+
+.rodape{
+    display:block;
+    width: 80%; 
+    height:200px;
+    background-color:black;
+}
+
+.rodape p{
+    color:white;
+}
+
+.rodape h3{ 
+    font-size: 18px;
+    height: 25px;
+    text-transform: uppercase;
+    color:#fec63e; 
+}
+
+
+
+.rodape h3::after{
+    content:""; 
+    background-color:#fec63e;
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: 5px 0 px 15px 0px; 
+}
+
+
+
+
+
+/*ESTILIZAÇÃO DA SESSÃO RODAPÉ 2*/
+
+.rodape2{
+    display:block;
+    width: 80%; 
+    height:15px;
+    background-color:#fec63e;
+    font-weight: bold;
+    text-align: center;
+}

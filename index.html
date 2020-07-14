@@ -1,0 +1,183 @@
+<!Doctype html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css1/reset.css">
+        <link rel="stylesheet" href="css1/grid-layout.css">
+        <link rel="stylesheet" href="css1/style.css">
+        <link rel="stylesheet" href="css1/responsivo.css">
+        <title> Home - BikEtec </title>
+    </head>
+
+    <body>
+
+        <!--html semantico tags header específicas de uma página-->
+        <!--Construindo o topo do site -->
+        <header> 
+            <div class="container">
+                <img src="img/biketec.png" alt="Logo do site" class="grid-2">
+               <!--Criando o menu de navegação-->
+                <nav>   
+                    <ul class="grid-14"> 
+                        <li><a href="#">HOME</a> | </li>
+                        <li><a href="#">SOBRE</a> | </li>
+                        <li><a href="#">PRODUTOS</a> | </li>
+                        <li><a href="#">PORTIFÓLIO</a> | </li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div> 
+        </header>
+
+        <!-- Criando a parte de Introdução-->
+        <section class="intro"> 
+            <div> 
+                <h1> Bicicletas feitas a mão </h1>
+                <blockquote>
+                    <p>"Não tem nada em sua casa que você não considera util ou acredita ser bonito</p>
+                    <cite>William Morris</cite>
+                </blockquote> <!-- Divisão para identificar que é uma sitação/opinião(HTML semantico-->
+                
+                <a href="#" class="btn">Orçamentos</a>
+            </div>
+        </section>
+
+        <!--Fim da sessão de introdução - Inicio da sessão de PRODUTOS--> 
+        <section class="produtos container">
+            <h2 class="subtitulo">Produtos</h2> 
+
+            <ul class="lista-produtos"> 
+                <li class="grid-1-3">
+                    <div class="item-produto"> 
+                       <img src="img/produtos/passeio.svg" alt="Bicicleta Passeio">
+                    </div>
+                    <h3> Passeio</h3>
+                    <p> Ainda assim, existem duvidas a respeito de como há necessidade de renovação</p>
+                </li>
+
+                <li class="grid-1-3">
+                     <div class="item-produto">  
+                        <img src="img/produtos/esporte.svg" alt="Bicicleta Esporte">
+                    </div>
+                    <h3> Esporte</h3>
+                    <p> Ainda assim, existem duvidas a respeito de como há necessidade de renovação</p>
+                </li>
+
+                <li class="grid-1-3">
+                    <div class="item-produto">  
+                        <img src="img/produtos/retro.svg" alt="Bicicleta Retro">
+                    </div>
+                    <h3> Retro </h3>
+                    <p> Ainda assim, existem duvidas a respeito de como há necessidade de renovação</p>
+                </li>
+            </ul> 
+
+            <div class="call"> 
+                <p>Ficou interessado? Clique e veja mais detalhes dos nossos produtos.</p>
+                <a href="produtos.html" class="btn">Produtos</a>
+            </div>
+        </section>
+
+        <!--Fim da sessão de produtos - Início da sessão de portifólios-->
+        <section class="portifolio">
+            <div class="container"> 
+                <h2 class="subtitulo">Portifolio</h2>
+                <ul> 
+                    <li class="grid-8"> 
+                        <img src="img/portfolio/retro.jpg" alt="Bicicletas Retro">
+                    </li>
+                    <li class="grid-8">
+                        <img src="img/portfolio/passeio.jpg" alt="Bicicletas de Passeio">
+                    </li>
+                    <li class="grid-16" ultima>
+                        <img src="img/portfolio/esporte.jpg" alt="Bicicleta de Esporte"> 
+                    </li>
+                </ul>
+
+                <div class="call">
+                    <p> Conheça mais o nosso portifólio</p> 
+                    <a href="portifolio.html" class="btn">Portifólio</a> 
+                </div>
+            </div>
+
+        </section>
+
+        <!--Fim da sessão portifólios - Início da sessão de qualidade -->
+        <section class="container-qualidade">
+            
+                <h2 class="subtitulo">Qualidade</h2> 
+                <img src="img/biketec-qualidade.png" alt="BikEtec" class="img-qualidade">
+                            
+                <ul  class="lista-qualidade">
+                    <li class="grid-1-3">
+                        <h3 class="subtitulo"> Durabilidade</h3>
+                        <p> Ainda assim, existem duvidas a respeito de como há necessidade de renovação.</p>
+                    </li>
+
+                    <li class="grid-1-3">
+                        <h3 class="subtitulo">Designer</h3>
+                        <p> Ainda assim, existem duvidas a respeito de como há necessidade de renovação.</p>
+                    </li>
+
+                    <li class="grid-1-3">
+                        <h3 class="subtitulo">Sustentabilidade</h3>
+                        <p> Ainda assim, existem duvidas a respeito de como há necessidade de renovação.</p>
+                    </li>
+
+                    <div class="call">
+                        <p> Conheça mais a nossa história.</p> 
+                        <a href="portifolio.html" class="btn">SOBRE</a> 
+                    </div>
+                </ul>
+             
+        </section>
+
+        <!--Fim da sessão qualidade - Início da sessão footer -->
+        <section class="footer"> 
+            <div class="container">
+                <blockquote>
+                    <p>"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.</p>
+                    <cite>William Morris</cite>
+                </blockquote> <!-- Divisão para identificar que é uma sitação/opinião(HTML semantico-->
+            </div>   
+        </section>  
+        
+        <section class="rodape">
+            <div>
+                <ul> 
+                    <li class="grid-4">
+                        <div class="item-rodape"> 
+                            <h3 class="subtitulo2"> Nossa história</h3>
+                            <p> O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.</p>
+                            <br>
+                            <p> @ Direitos Reservados.</p> 
+                        </div>
+                    </li>
+
+                    <li class="grid-4">
+                        <div class="item-rodape"> 
+                            <h3 class="subtitulo2"> Contato</h3>
+                            <p> -(11) 4002-8922</p>
+                            <p> -contato@biketec.com.br</p>
+                            <p> -Embu das Artes -SP </p>
+                        </div>
+                    </li>
+
+                    <li class="grid-4">
+                        <div class="item-rodape"> 
+                            <h3 class="subtitulo2"> Contato</h3>
+                            <img src="img/redes-sociais/facebook.svg" alt="Facebook" class="grid-2">
+                            <img src="img/redes-sociais/instagram.svg" alt="Instagram" class="grid-2">
+                            <img src="img/redes-sociais/twitter.svg" alt="Twitter" class="grid-2">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+      
+       </section>
+       <div class="rodape2">
+          <p>Biketec - 2020 - 1° DSN</p>
+       </div>
+    </body>  
+</html>

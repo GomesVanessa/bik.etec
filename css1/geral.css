@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*classes são chamadas com . e id são chamadas com #*/
+/*id é UNICO! Deve utiliza los em momentos específicos.*/ 
+
+.topo {
+background-color: rgb(255, 239, 21); 
+width: 100%; /*Modifica a largura das divs*/ /*% Unidade de medida relativa*/
+height: 60px; /*Modifica a altura das divs*/
+text-align: right; /*alinhamento do texto*/ 
+font-weight: bold; /*negrito*/
+font-size: 13pt;
+}
+
+.topo img{
+    margin-left: -300px;
+}
+
+ul{ 
+    padding-top: 10px;
+}
+
+ul li{ 
+display: inline; /*Permitem os itens ficarem Lado a Lado*/ 
+padding: 20px; /*Espacamento interno dos elementos-Margens lateral e superior*/
+color: black; /*Cor da fonte*/
+}
+
+a{ 
+    text-decoration:nome; 
+}
+
+/*Pseudo-classes*/ 
+ul li:hover{ 
+    color:white;
+}
